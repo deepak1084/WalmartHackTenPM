@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="City"
+        android:ems="10"
+        android:id="@+id/cityName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Area Name"
+        android:ems="10"
+        android:id="@+id/areaName"
+        android:layout_alignBaseline="@+id/landMark"
+        android:layout_alignBottom="@+id/landMark"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Flat No"
+        android:ems="10"
+        android:id="@+id/flatNo"
+        android:layout_below="@+id/cityName"
+        android:layout_alignStart="@+id/landMark"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@+id/editText3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="City"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_toEndOf="@+id/areaName"
+        android:layout_alignTop="@+id/flatNo" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Nearest Landmark"
+        android:ems="10"
+        android:id="@+id/landMark"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/flatNo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Address Type : Home/Office"
+        android:ems="10"
+        android:id="@+id/addressType"
+        android:layout_above="@+id/createGroup"
+        android:layout_alignStart="@+id/createGroup"
+        android:layout_alignEnd="@+id/createGroup" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="City"
+        android:ems="10"
+        android:id="@+id/groupId"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/landMark"
+        android:text="GroupId" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Group"
+        android:id="@+id/createGroup"
+        android:background="#0fff6a"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editText3"
+        android:layout_margin="10dp" />
+
+
+</RelativeLayout>
